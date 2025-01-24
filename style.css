@@ -1,8 +1,8 @@
-body{
+body {
     margin: 0;
 }
 
-nav{
+nav {
     background-color: white;
     padding: 15px 25px;
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
@@ -11,11 +11,11 @@ nav{
     width: 100%;
 }
 
-.brand-logo{
+.brand-logo {
     display: inline-block;
 }
 
-.brand-title{
+.brand-title {
     color: black;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,7 +25,7 @@ nav{
     top: -10px;
 }
 
-.link-container{
+.link-container {
     float: right;
     margin: 0;
     position: relative;
@@ -34,7 +34,7 @@ nav{
 }
 
 
-.link{
+.link {
     color: black;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -42,7 +42,7 @@ nav{
     transition: 0.2s;
 }
 
-.link:hover{
+.link:hover {
     text-decoration: underline;
     color: white;
     padding: 10px 30px;
@@ -51,27 +51,27 @@ nav{
     border-radius: 15px;
 }
 
-main{
+main {
     margin: 150px;
 }
 
-#about{
+#about {
     padding: 100px;
     display: inline-block;
     display: grid;
-    align-items: center; 
+    align-items: center;
     grid-template-columns: 1fr 2fr;
     column-gap: 1px;
     box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.5) inset;
     border-radius: 50px;
 }
 
-.me{
+.me {
     display: inline-block;
     margin-left: 100px;
 }
 
-.introduction{
+.introduction {
     display: inline-block;
     margin: 0;
     padding: 50px;
@@ -79,23 +79,184 @@ main{
     font-size: 24px;
 }
 
-#lifestory{
-    margin: 300px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    
+#lifestory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
 }
 
-.childhood{
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2) inset;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-    display: inline-block;
-    padding-left: 25px;
+    text-align: center;
 }
 
+.card p {
+    padding: 0 10px 10px;
+    font-size: 1em;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-align:justify;
+}
 
+.indoor{
+    text-align: center;
+    margin-top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+#hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.outdoor{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#fav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+}
+
+#friend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+}
+
+.card-1 {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2) inset;
+    transition: transform 0.2s;
+}
+
+.card-1:hover {
+    transform: scale(1.05);
+}
+
+.card-1 img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.card-1 h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.card-1 p {
+    padding: 0 10px 10px;
+    font-size: 1em;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-align:justify;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
