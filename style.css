@@ -198,6 +198,43 @@ main {
     text-align:justify;
 }
 
+.card-2 {
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: pink;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2) inset;
+    transition: transform 0.2s;
+}
+
+.card-2:hover {
+    transform: scale(1.05);
+}
+
+.card-2 img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding-top:  25px ;
+}
+
+.card-2 h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.card-2 p {
+    padding: 0 10px 10px;
+    font-size: 1em;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-align:justify;
+}
+
 * {box-sizing:border-box}
 
 .slideshow-container {
